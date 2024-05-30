@@ -1,9 +1,11 @@
 html,
 body {
+  background-image: url(/img/newbackgroundlarge.png);
+  background-position: center;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #d2faff;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -21,9 +23,45 @@ header h1 {
   margin: 0;
 }
 
+#name {
+  font-weight: bold;
+}
+
+image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#page-title {
+  text-align: center;
+  padding: 5vh 0 0 0;
+}
+
+#content-title {
+  padding-left: 10vh;
+}
+
+h3 {
+  padding-left: 10vh;
+  font-weight: lighter;
+}
+button {
+  background-color: #FF7D54;
+  color: #f1f1f1;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 32px;
+  border: none;
+}
+
 .grid {
-  display: flex-wrap;
-  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2em;
   padding: 4em;
 }
@@ -36,7 +74,7 @@ header h1 {
 
 @media (min-width: 992px) {
   .grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -49,15 +87,17 @@ header h1 {
   border-radius: 10px;
 }
 
-.grid-item:hover {
-  transform: scale(1.03);
+.grid-item img {
+  width: 300px;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.5s;
 }
 
-.grid-item img {
-  width: 500px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+.grid-item img:hover {
+  transform: scale(1.03);
+
 }
 
 @keyframes fadeIn {

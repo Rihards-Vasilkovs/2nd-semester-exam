@@ -15,9 +15,7 @@ async function getProjects() {
   return data;
 }
 
-function displayProjects(posts) {
-  const projectsList = document.querySelector("#projects-list");
-  
+function displayProjects(posts) {  
   for (const post of posts) {
     projectsList.insertAdjacentHTML(
       "beforeend",
