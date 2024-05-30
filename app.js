@@ -10,8 +10,8 @@ async function initApp() {
 }
 
 async function getProjects() {
-  const response = await fetch ("https://wp.rihardsmedia.dk/wp-json/wp/v2/posts?acf_format=standard");
-  const data = await response.json();
+  const response = await fetch ("https://wp.rihardsmedia.dk/wp-json/wp/v2/posts?acf_format=standard"); //Fetches data from URL
+  const data = await response.json(); //Waits until the json has been loaded
   return data;
 }
 
@@ -19,7 +19,7 @@ function displayProjects(posts) {
   for (const post of posts) {
     projectsList.insertAdjacentHTML(
       "beforeend",
-      `<li>${post.title.rendered}</li>`
+      `<li>${post.title.rendered}</li>` 
     )
   }
 }
