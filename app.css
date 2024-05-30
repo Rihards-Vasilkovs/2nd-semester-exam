@@ -1,6 +1,6 @@
 html,
 body {
-  background-image: url('newbackgroundlarge.png');
+  background-image: url(newbackgroundlarge.png);
   background-position: center;
   margin: 0;
   padding: 0;
