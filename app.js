@@ -15,11 +15,11 @@ async function getProjects() {
   return data;
 }
 
-function displayProjects(posts) {  
+function displayProjects(posts) {   
   for (const post of posts) {
     projectsList.insertAdjacentHTML(
       "beforeend",
-      `<li>${post.title.rendered}</li>` 
+      `<li>${post.title.rendered}</li>` //For each post, inserts a list HTML element at the end of the projectsList element in the DOM. 
     )
   }
 }

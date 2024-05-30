@@ -25,6 +25,7 @@ header h1 {
   margin: 0;
 }
 
+/*Alignment of image, resizing*/
 image {
   background-position: center;
   background-repeat: no-repeat;
@@ -37,14 +38,17 @@ image {
   padding: 5vh 0 0 0;
 }
 
-#content-title {
+/*Heading had to be aligned to the grid containers.*/
+#title-projects {
   padding-left: 10vh;
 }
-
+/*Heading had to be aligned to the grid containers.*/
 h3 {
   padding-left: 10vh;
   font-weight: normal;
 }
+
+/*Styles for resizing, aligning and changing the color of the button*/
 button {
   background-color: #FF7D54;
   color: #f1f1f1;
@@ -56,7 +60,7 @@ button {
   padding: 16px 32px;
   border: none;
 }
-
+/*Displays only two projects in one row*/
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -76,15 +80,16 @@ button {
   }
 }
 
+/*Styles for the container of each project UI card*/
 .grid-item {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   padding: 1.5em;
-  background-color: #e7fdff;
+  background-color: #fdf8f3;
   transition: 0.5s;
   animation: fadeIn 0.5s;
   border-radius: 10px;
 }
-
+/*Resizing of the image, so it is not too big*/
 .grid-item img {
   width: 300px;
   height: 50%;
@@ -93,8 +98,9 @@ button {
   transition: 0.5s;
 }
 
+/*Hover indicator for feedback*/
 .grid-item img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 
 }
 
